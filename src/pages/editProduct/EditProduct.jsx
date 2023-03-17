@@ -24,9 +24,9 @@ export default function EditProduct() {
   useEffect(() => {
     dispatch(getProduct(id));
   }, [dispatch, id]);
-
+  console.log(productEdit?.product);
   useEffect(() => {
-    setProduct(productEdit);
+    setProduct(productEdit?.product);
     setImagePreview(
       productEdit && productEdit?.image
         ? productEdit?.product?.image?.filePath
