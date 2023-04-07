@@ -7,7 +7,8 @@ const Loader = () => {
   return ReactDOM.createPortal(
     <div className="wrapper">
       <div className="loader">
-        <img src={loaderImg} alt="Loading..." />
+        <p style={{zIndex: '99', color: '#ff7722', fontStyle: 'bold', fontSize: '34px', marginBottom: '-30px'}}>Please Wait... it Might take a while to load</p>
+        <img className="loader-image" src={loaderImg} alt="Loading..." />
       </div>
     </div>,
     document.getElementById("loader")
